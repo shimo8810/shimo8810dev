@@ -1,0 +1,26 @@
+body {
+    background-color: #ECEFF4;
+    font-family: ui-monospace,
+            'JetBrains Mono',
+             Menlo, Monaco,
+             "Cascadia Mono", "Segoe UI Mono",
+             "Roboto Mono",
+             "Oxygen Mono",
+             "Ubuntu Monospace",
+             "Source Code Pro",
+             "Fira Mono",
+             "Droid Sans Mono",
+             "Courier New", monospace;
+    color: #4C566A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #434C5E;
+}
+
+
+
+a:link { color: #5E81AC; }
+a:visited { color: #5E81AC; }
+a:hover { color: #5E81AC; }
+a:active { color: #5E81AC; }
