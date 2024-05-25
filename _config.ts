@@ -1,13 +1,13 @@
 import attributes from "lume/plugins/attributes.ts";
-import highlight from "lume/plugins/code_highlight.ts";
+import basePath from "lume/plugins/base_path.ts";
 import date from "lume/plugins/date.ts";
+import highlight from "lume/plugins/code_highlight.ts";
 import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
 
 export default lume(
   {
     src: "./src",
-    // location: new URL("https://shimo8810.github.io/shimo8810dev/"),
   },
   {
     markdown: {
@@ -18,6 +18,7 @@ export default lume(
   }
 )
   .use(attributes())
+  .use(basePath())
   .use(date())
   .use(postcss())
   .use(
