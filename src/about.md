@@ -18,7 +18,7 @@ layout: /layouts/post.vto
 
 - このサイトのページは以下のリポジトリで管理されています。
   - [shimo8810/shimo8810dev](https://github.com/shimo8810/shimo8810dev)
-- このサイトに対する要望はこのリポジトリの Issue に投稿してください。
+- このサイトに対する要望はこのリポジトリの Issue に投稿してください。やる気があったら対応します。
 
 ## 利用規約
 
