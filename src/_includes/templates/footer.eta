@@ -1,5 +1,0 @@
-<footer class="flex w-full flex-row-reverse">
-    <p>
-        <%~ include("/templates/cc.eta") %>
-    </p>
-</footer>

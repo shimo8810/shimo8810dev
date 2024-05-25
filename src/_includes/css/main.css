@@ -1,26 +1,137 @@
 body {
-    background-color: #ECEFF4;
-    font-family: ui-monospace,
-            'JetBrains Mono',
-             Menlo, Monaco,
-             "Cascadia Mono", "Segoe UI Mono",
-             "Roboto Mono",
-             "Oxygen Mono",
-             "Ubuntu Monospace",
-             "Source Code Pro",
-             "Fira Mono",
-             "Droid Sans Mono",
-             "Courier New", monospace;
-    color: #4C566A;
+  background-color: #ECEFF4;
+  font-family:
+  "M PLUS Rounded 1c",
+  "ui-monospace",
+  'JetBrains Mono',
+  "Menlo",
+  "Monaco",
+  "Cascadia Mono",
+  "Segoe UI Mono",
+  "Roboto Mono",
+  "Oxygen Mono",
+  "Ubuntu Monospace",
+  "Source Code Pro",
+  "Fira Mono",
+  "Droid Sans Mono",
+  "Courier New",
+  "monospace";
+  font-size: 1.125em;
+  color: #434C5E;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+header {
+  margin: 0px;
+  padding: 0.5em;
+  /* background-color: lightcoral; */
+  background-color: #E5E9F0;
+  border-bottom: 1px solid #D8DEE9;
+  a {
+    font-size: 1.2em;
+    margin: 0 0.4em;
+    margin-left: 0;
+    padding: 0.15em 0.5em;
+    border-radius: 0.25rem;
+    text-decoration: none;
+  }
+
+  a:link {
     color: #434C5E;
+  }
+  a:visited {
+    color: #434C5E;
+  }
+  a:hover {
+    background-color: #D8DEE9;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    margin: 0 20%;
+  }
+}
+
+@media (max-width: 1279px) {
+  main {
+    margin: 0 10px;
+  }
+}
+
+main {
+  flex-grow: 1;
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color: #4C566A;
+  }
+  a:visited {
+    color: #4C566A;
+  }
+  div.home {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em auto auto auto;
+  }
+  div.post {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em auto auto auto;
+  }
+
+  div.post-list {
+    width: 760px;
+    margin: 1em auto auto auto;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 0.85em;
+    }
+  }
+
+  div.post-link {
+    margin-top: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  a:link {
+    color: #5E81AC;
+  }
+  a:visited {
+    color: #5E81AC;
+  }
+  a:hover {
+    color: #88C0D0;
+    text-decoration: underline;
+  }
 }
 
 
-
-a:link { color: #5E81AC; }
-a:visited { color: #5E81AC; }
-a:hover { color: #5E81AC; }
-a:active { color: #5E81AC; }
+footer {
+  margin: 0px;
+  padding: 0.5em;
+  /* background-color: #E5E9F0;
+  border-top: 1px solid #D8DEE9; */
+  text-align: center;
+  p {
+    font-size: 0.75em;
+    color: #4C566A;
+    margin: 0px;
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: #5E81AC;
+    }
+    a:visited {
+      color: #5E81AC;
+    }
+  }
+}
