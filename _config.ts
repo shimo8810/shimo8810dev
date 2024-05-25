@@ -7,7 +7,7 @@ import postcss from "lume/plugins/postcss.ts";
 export default lume(
   {
     src: "./src",
-    location: new URL("https://shimo8810.github.io/shimo8810dev/"),
+    // location: new URL("https://shimo8810.github.io/shimo8810dev/"),
   },
   {
     markdown: {
