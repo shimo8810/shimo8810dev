@@ -2,7 +2,7 @@
 title: posts | shimo8810.dev
 ---
 <div class="post-list">
-  {{ for post of search.pages("post") }}
+  {{ for post of search.pages("post", "date=desc") }}
   <div class="post-link">
     <a href="{{ post.url }}">{{ post.title }}</a>
     <span>{{ post.date.toLocaleDateString('sv-SE') }}</span>
