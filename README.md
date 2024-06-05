@@ -1,6 +1,6 @@
 # shimo8810dev
 
-## issues
+## feedback
 
 - このサイトに対する意見や要望、抗議に関しては本リポジトリの [Issues](https://github.com/shimo8810/shimo8810dev/issues)に"ご意見"ラベルをつけて作成してください。
 
