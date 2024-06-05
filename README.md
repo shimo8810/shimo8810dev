@@ -1,17 +1,6 @@
 # shimo8810dev
 
-## usage
+## Licenses
 
-```sh
-deno task build
-```
-
-```sh
-deno task serve
-```
-
-## License
-
-this repository is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
-
-the contents (posts, mutter) of the site are licensed under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) license.
+- このリポジトリに含まれるコードは [MIT](https://opensource.org/licenses/MIT) ライセンスで提供されています。
+- このリポジトリ乃至サイト上に投稿されているコンテンツ(posts, mutter)は [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ライセンスで提供されています。
