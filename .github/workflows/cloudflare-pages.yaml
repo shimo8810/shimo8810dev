@@ -23,7 +23,7 @@ jobs:
         run: deno task build
 
       - name: Publish
-        uses: cloudflare/pages-action@v3
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accoutId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
