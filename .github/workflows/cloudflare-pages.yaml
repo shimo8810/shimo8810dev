@@ -1,0 +1,32 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Publish to Cloudflare Pages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Build site
+        run: deno task build
+
+      - name: Publish
+        uses: cloudflare/pages-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accoutId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: "shimo8810-pages"
+          directory: "_site"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
