@@ -26,7 +26,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accoutId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: "shimo8810-pages"
           directory: "_site"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
