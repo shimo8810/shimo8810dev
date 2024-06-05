@@ -1,4 +1,6 @@
-# shimo8810dev
+## About
+
+- このリポジトリは、[shimo8810.dev](https://shimo8810.dev) のソースコードとコンテンツを管理するためのリポジトリです。
 
 ## Feedback
 
