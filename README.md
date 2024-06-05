@@ -1,3 +1,20 @@
+<div align="center">
+<h1>
+shimo8810.dev
+</h1>
+
+<span>
+<img alt="number of posts" src="https://img.shields.io/github/directory-file-count/shimo8810/shimo8810dev/src%2Fposts?type=file&extension=md&style=for-the-badge&label=POSTS">
+</span>
+<span>
+<img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/shimo8810/shimo8810dev/cloudflare-pages.yaml?style=for-the-badge&logo=github" />
+</span>
+<span>
+<img alt="GitHub License" src="https://img.shields.io/github/license/shimo8810/shimo8810dev?style=for-the-badge" />
+</span>
+
+</div>
+
 ## About
 
 - このリポジトリは、[shimo8810.dev](https://shimo8810.dev) のソースコードとコンテンツを管理するためのリポジトリです。
