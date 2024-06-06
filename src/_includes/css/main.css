@@ -1,5 +1,22 @@
+  /* nord color theme */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
 body {
-  background-color: #ECEFF4;
+  background-color: var(--nord6);
   font-family:
   "M PLUS Rounded 1c",
   "ui-monospace",
@@ -17,7 +34,7 @@ body {
   "Courier New",
   "monospace";
   font-size: 1.125em;
-  color: #434C5E;
+  color: var(--nord1);
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -27,9 +44,8 @@ body {
 header {
   margin: 0px;
   padding: 0.5em;
-  /* background-color: lightcoral; */
-  background-color: #E5E9F0;
-  border-bottom: 1px solid #D8DEE9;
+  background-color: var(--nord5);
+  border-bottom: 1px solid var(--nord4);
   a {
     font-size: 1.2em;
     margin: 0 0.4em;
@@ -40,13 +56,13 @@ header {
   }
 
   a:link {
-    color: #434C5E;
+    color: var(--nord2);
   }
   a:visited {
-    color: #434C5E;
+    color: var(--nord2);
   }
   a:hover {
-    background-color: #D8DEE9;
+    background-color: var(--nord4);
   }
 }
 
@@ -66,12 +82,6 @@ main {
   flex-grow: 1;
   a {
     text-decoration: none;
-  }
-  a:link {
-    color: #4C566A;
-  }
-  a:visited {
-    color: #4C566A;
   }
   div.home {
     text-align: center;
@@ -102,13 +112,13 @@ main {
     justify-content: space-between;
   }
   a:link {
-    color: #5E81AC;
+    color: var(--nord10);
   }
   a:visited {
-    color: #5E81AC;
+    color: var(--nord10);
   }
   a:hover {
-    color: #88C0D0;
+    color: var(--nord8);
     text-decoration: underline;
   }
 }
@@ -117,21 +127,19 @@ main {
 footer {
   margin: 0px;
   padding: 0.5em;
-  /* background-color: #E5E9F0;
-  border-top: 1px solid #D8DEE9; */
   text-align: center;
   p {
     font-size: 0.75em;
-    color: #4C566A;
+    color: var(--nord3);
     margin: 0px;
     a {
       text-decoration: none;
     }
     a:link {
-      color: #5E81AC;
+      color: var(--nord10);
     }
     a:visited {
-      color: #5E81AC;
+      color: var(--nord10);
     }
   }
 }
