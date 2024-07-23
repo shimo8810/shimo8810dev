@@ -19,6 +19,12 @@ shimo8810.dev
 
 - このリポジトリは、[shimo8810.dev](https://shimo8810.dev) のソースコードとコンテンツを管理するためのリポジトリです。
 
+## Build
+
+```shellscript
+deno task build
+```
+
 ## Feedback
 
 - このサイトに対する意見や要望、抗議に関しては本リポジトリの [Issues](https://github.com/shimo8810/shimo8810dev/issues)に"ご意見"ラベルをつけて作成してください。
