@@ -1,4 +1,5 @@
-  /* nord color theme */
+:root {
+/* nord color theme */
   --nord0: #2e3440;
   --nord1: #3b4252;
   --nord2: #434c5e;
@@ -15,6 +16,8 @@
   --nord13: #ebcb8b;
   --nord14: #a3be8c;
   --nord15: #b48ead;
+}
+
 body {
   background-color: var(--nord6);
   font-family:
@@ -46,6 +49,7 @@ header {
   padding: 0.5em;
   background-color: var(--nord5);
   border-bottom: 1px solid var(--nord4);
+
   a {
     font-size: 1.2em;
     margin: 0 0.4em;
