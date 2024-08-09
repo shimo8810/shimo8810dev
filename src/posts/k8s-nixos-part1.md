@@ -1,5 +1,5 @@
 ---
-title: NixOS で Kubernetes を構築する Part 1
+title: "NixOS で Kubernetes を構築する Part 1: NixOS をインストールする"
 date: 2024-08-09
 ---
 
