@@ -100,3 +100,50 @@ sudo nixos-rebuild switch --flake .#shirase
 
 成功したら flake 化完了。
 
+## 設定の追加
+
+`configuration.nix` に設定を追加していく。
+ここでは git, openssh, resolved, avahi を有効にしておく。
+k8s 関係は後の記事で追加する。
+
+```nix
+{
+  # enable git
+  programs.git.enable = true;
+
+  # enable openssh
+  services.openssh = {
+    enable = true;
+    settings.PasswordAuthentication = true;
+  };
+
+  # enable systemd-resolved
+  services.resolved = {
+    enable = true;
+    fallbackDns = [
+      "1.1.1.1"
+      "1.0.0.1"
+      "2606:4700:4700::1111"
+      "2606:4700:4700::1001"
+    ];
+  };
+
+  # enable avahi
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    publish = {
+      enable = true;
+      addresses = true;
+    };
+  };
+}
+```
+
+設定を追加したら再ビルドして反映。
+
+```sh
+sudo nixos-rebuild switch --flake .#shirase
+```
+
+これで mdns で ssh できるようになっていれば成功、うまく行かない場合は再起動、それでも失敗ならログを見ながら設定を見直す。
