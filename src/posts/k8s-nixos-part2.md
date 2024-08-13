@@ -5,6 +5,8 @@ date: 2024-08-09
 
 k8s を自宅で動かすために何故か血迷って NixOS で構築するメモ。
 
+今回の作業範囲は、nixos の flake 化 と 適当な設定迄となる。
+
 ## これまでとこれからの流れ
 
 1. [NixOS で Kubernetes を構築する Part 1: NixOS をインストールする](/posts/k8s-nixos-part2)
