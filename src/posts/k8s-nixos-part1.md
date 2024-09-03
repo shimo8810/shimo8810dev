@@ -3,6 +3,8 @@ title: "NixOS で Kubernetes を構築する Part 1: NixOS をインストール
 date: 2024-08-09
 ---
 
+# NixOS で Kubernetes を構築する Part 1: NixOS をインストールする
+
 k8s を自宅で動かすために何故か血迷って NixOS で構築するメモ。
 
 ちなみに今回のインストール作業は [NixOs Installation Guide](https://nixos.wiki/wiki/NixOS_Installation_Guide) と [NixOS Manual](https://nixos.org/manual/nixos/stable/#ch-installation) を参考にしている。
