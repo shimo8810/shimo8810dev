@@ -3,6 +3,8 @@ title: "NixOS で Kubernetes を構築する Part 2: NixOS を管理する"
 date: 2024-08-09
 ---
 
+# NixOS で Kubernetes を構築する Part 2: NixOS を管理する
+
 k8s を自宅で動かすために何故か血迷って NixOS で構築するメモ。
 
 今回の作業範囲は、nixos の flake 化 と 適当な設定迄となる。
