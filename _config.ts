@@ -4,6 +4,7 @@ import date from "lume/plugins/date.ts";
 import highlight from "lume/plugins/code_highlight.ts";
 import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
+import jsx from "lume/plugins/jsx.ts";
 
 export default lume(
   {
@@ -20,6 +21,7 @@ export default lume(
   .use(attributes())
   .use(basePath())
   .use(date())
+  .use(jsx())
   .use(postcss())
   .use(
     highlight({
