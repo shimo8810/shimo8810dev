@@ -1,6 +1,6 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.2.0/",
+    "lume/": "https://deno.land/x/lume@v2.3.0/",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.4.1/"
   },
   "tasks": {
