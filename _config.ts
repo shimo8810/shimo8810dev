@@ -22,7 +22,6 @@ export default lume(
   .use(attributes())
   .use(basePath())
   .use(date())
-  .use(favicon())
   .use(jsx())
   .use(postcss())
   .use(
@@ -32,4 +31,6 @@ export default lume(
         path: "/_includes/css/code_theme.css",
       },
     })
-  );
+  )
+  .copy("/_includes/favicon.png", "/favicon.png");
+// .remoteFile("favicon.png", import.meta.resolve("./src/favicon.png"));
