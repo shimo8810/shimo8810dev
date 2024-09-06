@@ -4,6 +4,8 @@ import date from "lume/plugins/date.ts";
 import highlight from "lume/plugins/code_highlight.ts";
 import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
+import jsx from "lume/plugins/jsx.ts";
+import favicon from "lume/plugins/favicon.ts";
 
 export default lume(
   {
@@ -20,6 +22,7 @@ export default lume(
   .use(attributes())
   .use(basePath())
   .use(date())
+  .use(jsx())
   .use(postcss())
   .use(
     highlight({
@@ -28,4 +31,6 @@ export default lume(
         path: "/_includes/css/code_theme.css",
       },
     })
-  );
+  )
+  .copy("/_includes/favicon.png", "/favicon.png");
+// .remoteFile("favicon.png", import.meta.resolve("./src/favicon.png"));
