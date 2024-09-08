@@ -10,14 +10,14 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => {
       </head>
       <body>
         <header>
-          <nav>
+          {/* <nav>
             <a href="/">Home</a>
             <a href="/about">About</a>
-          </nav>
+          </nav> */}
         </header>
-        <main>{data.content}</main>
+        <main>{data.children}</main>
         <footer>
-          <p>&copy; {new Date().getFullYear()} My Site</p>
+          {/* <p>&copy; {new Date().getFullYear()} My Site</p> */}
         </footer>
       </body>
     </html>
