@@ -7,8 +7,6 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => {
         <title>{data.title}</title>
         <link rel="stylesheet" href="/styles.css" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <meta name="description" content={data.description} />
-        <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
         <header>
