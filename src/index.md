@@ -1,6 +1,6 @@
 ---
 title: shimo8810.dev
-layout: /layouts/home.vto
+layout: /layouts/home.tsx
 ---
 
 ## ここは何?
