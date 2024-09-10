@@ -1,3 +1,6 @@
+import Footer from "../templates/footer.tsx";
+import Header from "../templates/header.tsx";
+
 export default (data: Lume.Data, _helpers: Lume.Helpers) => {
   return (
     <html lang="ja">
@@ -9,16 +12,9 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       </head>
       <body>
-        <header>
-          {/* <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-          </nav> */}
-        </header>
+        <Header />
         <main>{data.children}</main>
-        <footer>
-          {/* <p>&copy; {new Date().getFullYear()} My Site</p> */}
-        </footer>
+        <Footer />
       </body>
     </html>
   );
