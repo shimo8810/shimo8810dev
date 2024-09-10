@@ -1,6 +1,6 @@
 ---
 title: このサイトについて | shimo8810.dev
-layout: /layouts/post.vto
+layout: /layouts/post.tsx
 ---
 
 # このサイトについて
