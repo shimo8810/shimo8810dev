@@ -1,9 +1,9 @@
 ---
-title: Nix による dotfiles - part1
+title: dotfiles with nix - part1
 date: 2024-09-16
 ---
 
-# Nix による dotfiles - part 1
+# dotfile with nix - part 1
 
 手元の PC の環境をすべて Nix によって構築する。
 以前作成した環境をベースにしている。
