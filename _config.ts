@@ -5,6 +5,7 @@ import highlight from "lume/plugins/code_highlight.ts";
 import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
 import jsx from "lume/plugins/jsx.ts";
+import tailwindcss from "lume/plugins/tailwindcss.ts";
 
 export default lume(
   {
@@ -16,12 +17,17 @@ export default lume(
         breaks: true,
       },
     },
-  },
+  }
 )
   .use(attributes())
   .use(basePath())
   .use(date())
   .use(jsx())
+  .use(
+    tailwindcss({
+      extensions: [".html", ".tsx"],
+    })
+  )
   .use(postcss())
   .use(
     highlight({
@@ -29,6 +35,6 @@ export default lume(
         name: "nord",
         path: "/_includes/css/code_theme.css",
       },
-    }),
+    })
   )
   .copy("/_includes/favicon.png", "/favicon.png");
