@@ -35,7 +35,7 @@ date: 2024-09-16
 
 リポジトリのディレクトリ構成は以下の通りになっている。
 
-```shellscript
+```bash
 tsurara
 ├── devshells
 ├── home
@@ -85,17 +85,19 @@ devShells."<system>".default = derivation;
 ```
 
 ### `devshells/default.nix` の実装
+
 開発環境は想定するホストの全アーキテクチャで同じ構成にする。
 同じ記述の重複を避けるために、`nixpkgs.lib.genAttrs` を使用している。
-これは与えられた名前リストをkeyとしたmapを作成することができる。
+これは与えられた名前リストを key とした map を作成することができる。
 
 例としてはこんな感じらしい。
+
 ```nix
 genAttrs [ "foo" "bar" ] (name: "x_" + name)
 => { foo = "x_foo"; bar = "x_bar"; }
 ```
 
-これを用いて nixpkgs の system を map化
+これを用いて nixpkgs の system を map 化
 
 ```nix
 inputs:
