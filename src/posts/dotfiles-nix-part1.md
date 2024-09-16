@@ -1,9 +1,9 @@
 ---
-title: Nix(NixOS + home-manager) による dotfiles - part1
+title: Nix による dotfiles - part1
 date: 2024-09-16
 ---
 
-# Nix(NixOS + home-manager) による dotfiles - part 1
+# Nix による dotfiles - part 1
 
 手元の PC の環境をすべて Nix によって構築する。
 以前作成した環境をベースにしている。
