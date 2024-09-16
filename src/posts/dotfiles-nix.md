@@ -146,3 +146,10 @@ flake を使用しているので下記のコマンドで開発環境に入れ�
 tsurara-env ❯
 ```
 
+## 参照
+
+- [NixOS と Hyprland で最強の Linux デスクトップ環境を作る
+  ](https://zenn.dev/asa1984/scraps/e4d8b9947d8351)
+- [asa1984/dotfiles: NixOS is great](https://github.com/asa1984/dotfiles)
+- [nix develop - Nix Reference Manual](https://nix.dev/manual/nix/2.18/command-ref/new-cli/nix3-develop)
+- https://nixos.org/manual/nixpkgs/stable/#function-library-lib.attrsets.genAttrs
