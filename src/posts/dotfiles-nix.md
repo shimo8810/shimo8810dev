@@ -27,3 +27,31 @@ date: 2024-09-16
 | home-manager |       O        |     O     |    O    |
 |      HW      | think pad x280 |   自作    | MBA M1  |
 
+## 方針
+
+- できるだけ浅い層(`flake.nix`など)には具体を実装しない
+
+## ディレクトリ構成
+
+リポジトリのディレクトリ構成は以下の通りになっている。
+
+```shellscript
+tsurara
+├── devshells
+├── home
+│   ├── cli
+│   ├── desktop
+│   └── gui
+└── hosts
+    ├── hemingway
+    ├── hokusai
+    └── pipkrake
+```
+
+- `devshells`: このリポジトリの開発環境
+- `home`: home-manager から利用するモジュール
+  - `cli`: cli 環境用のモジュール
+  - `desktop`: デスクトップ環境(gnome とか hyprland とか)用のモジュール
+  - `gui`: gui 環境用のツール
+- `hosts/**`: 各ホスト用の設定、NixOS や home-manager の設定はここ
+
