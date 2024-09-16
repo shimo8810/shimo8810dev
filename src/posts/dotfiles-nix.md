@@ -55,3 +55,94 @@ tsurara
   - `gui`: gui 環境用のツール
 - `hosts/**`: 各ホスト用の設定、NixOS や home-manager の設定はここ
 
+## 開発環境
+
+このリポジトリを開発するための仮想環境を作成してある。
+といっても今は formatter と linter をインストールしてあるだけ。
+
+### devShells
+
+flake では仮想環境を `devShells` として output する必要がある。
+
+```nix
+# Used by `nix develop .#<name>`
+devShells."<system>"."<name>" = derivation;
+# Used by `nix develop`
+devShells."<system>".default = derivation;
+```
+
+仮想環境の実装自体は `devshells` にて実装してあるのでそれを import して使用している。
+
+```nix
+{
+  inputs = {
+    # ...
+  };
+  outputs = inputs: {
+    devShells = (import ./devshells inputs);
+  };
+}
+```
+
+### `devshells/default.nix` の実装
+開発環境は想定するホストの全アーキテクチャで同じ構成にする。
+同じ記述の重複を避けるために、`nixpkgs.lib.genAttrs` を使用している。
+これは与えられた名前リストをkeyとしたmapを作成することができる。
+
+例としてはこんな感じらしい。
+```nix
+genAttrs [ "foo" "bar" ] (name: "x_" + name)
+=> { foo = "x_foo"; bar = "x_bar"; }
+```
+
+これを用いて nixpkgs の system を map化
+
+```nix
+inputs:
+let
+  Systems = [
+    "aarch64-linux"
+    "x86_64-linux"
+    "aarch64-darwin"
+    "x86_64-darwin"
+  ];
+in
+inputs.nixpkgs.lib.genAttrs Systems (
+  system:
+  let
+    pkgs = import inputs.nixpkgs { inherit system; };
+  in
+  {
+    default = pkgs.mkShell {
+      name = "tsurara";
+      packages = with pkgs; [
+        nixfmt-rfc-style
+        nixd
+      ];
+
+      shellHook = ''
+        exec zsh
+      '';
+    };
+  }
+)
+```
+
+### 実行方法
+
+flake を使用しているので下記のコマンドで開発環境に入れるようにする。
+
+実行コマンド:
+
+```bash
+~/tsurara main
+❯ nix develop
+```
+
+切り替わった環境:
+
+```bash
+~/tsurara main
+tsurara-env ❯
+```
+
