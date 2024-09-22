@@ -1,3 +1,6 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 @import "css/main.css";
 @import "css/code_theme.css";
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
