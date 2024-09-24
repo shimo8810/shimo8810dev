@@ -11,9 +11,9 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => {
         <link rel="stylesheet" href="/styles.css" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       </head>
-      <body>
+      <body className="flex flex-col m-0 h-screen bg-nord6 font-mPlus">
         <Header />
-        <main>{data.children}</main>
+        <main className="flex-grow mx-2 md:mx-[20%]">{data.children}</main>
         <Footer />
       </body>
     </html>

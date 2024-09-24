@@ -1,5 +1,7 @@
 export const layout = "./base.tsx";
 
 export default (data: Lume.Data, _helpers: Lume.Helpers) => {
-  return <div className="home">{data.children}</div>;
+  return (
+    <article className="text-center px-1 mt-4 m-auto">{data.children}</article>
+  );
 };
