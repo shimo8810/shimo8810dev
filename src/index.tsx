@@ -2,7 +2,7 @@ export const title = "shimo8810.dev";
 
 export default (_data: Lume.Data, _helpers: Lume.Helpers) => {
   return (
-    <article>
+    <article className="text-center px-1 mt-4 m-auto">
       <h2>ここは何?</h2>
       ここは私(shimo8810)が技術系の記事やつぶやきを書くためのページ
       <h2>分野</h2>
