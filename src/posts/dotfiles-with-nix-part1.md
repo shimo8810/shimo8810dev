@@ -35,7 +35,7 @@ date: 2024-09-16
 
 リポジトリのディレクトリ構成は以下の通りになっている。
 
-```shellscript
+```sh
 tsurara
 ├── devshells
 ├── home
